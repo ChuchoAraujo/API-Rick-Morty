@@ -45,7 +45,6 @@ export const CharacterDetails = () => {
                             handleClick()
                         }} 
                         className={buttonClasses}>Add Fav:  <AiFillHeart /></button>
-                        
                     </div>
 
                 </div>

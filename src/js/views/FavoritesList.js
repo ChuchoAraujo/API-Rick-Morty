@@ -7,17 +7,22 @@ export const FavoritesList = () => {
 
 
   return (
+
+    <>    
+    <h1 className='title_fav'>Favorites list</h1>
     <div className='container-fav'>
         {store.favorites.map((fav, index)=> (
           <div key={index} className='card-body-fav'>
             <img src={fav.image} />
             <div className='card-texto'>
               <p><strong>{fav.name}</strong></p>
-              <button className='btn btn-danger' onClick={() => actions.removeFavorite(fav)}><BsFillTrash3Fill /></button>
+              <BsFillTrash3Fill onClick={() => actions.removeFavorite(fav)} className='icon_trash'/>
             </div>
             
-            </div>
+          </div>
         ))}
     </div>
+    </>
+
   )
 }

@@ -20,10 +20,12 @@ p {
 a {
     text-decoration: none;
     color: inherit;
+    font-weight: 700;
 }
 
 a:hover {
-    color: rgb(79, 231, 173);
+    text-decoration: none;
+    color: inherit;
     font-weight: 700;
     cursor: pointer;
 }
@@ -67,11 +69,13 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     margin-left: 10px;
+    font-size: 15px;
 }
 .icono_heart {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .icon_green{
@@ -80,7 +84,43 @@ a:hover {
 .icon_green_dark {
     color: rgb(8, 145, 99);
     font-weight: 700;
+    animation: efect_shake 0.8s linear both
 }
+
+.efect_shake {
+    animation: efect_shake .7s linear both
+}
+
+@keyframes efect_shake {
+    0% {
+        transform: scale3d(1, 1, 1)
+    }
+
+    30% {
+        transform: scale3d(.75, 1.25, 1)
+    }
+
+    40% {
+        transform: scale3d(1.25, .75, 1)
+    }
+
+    50% {
+        transform: scale3d(.85, 1.15, 1)
+    }
+
+    65% {
+        transform: scale3d(1.05, .95, 1)
+    }
+
+    75% {
+        transform: scale3d(.95, 1.05, 1)
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1)
+    }
+}
+/* ///////////////////////////////////////// */
 
 .card-texto p strong {
     font-weight: 900;
@@ -188,16 +228,16 @@ a:hover {
     width: 1400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
     grid-row-gap: 40px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .card-body-fav {
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(70, 70, 70);
     display: flex;
     border-radius: 30px;
+    width: 400px;
     height: 200px;
     padding: 0;
     -webkit-box-shadow: 10px 15px 23px -14px rgba(0, 0, 0, 0.75);
@@ -216,14 +256,15 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 10px;
+    align-items: center;
+    padding: 5px;
     margin: 0;
     margin-left: 10px;
     font-size: 20px;
 }
 
 .card-body-fav .card-texto p strong {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .button-fav {
@@ -242,4 +283,19 @@ background-color: rgb(79, 231, 173);;
 .green_dark {
     background-color: rgb(32, 121, 85);
     color: white;
+}
+
+.title_fav {
+    margin: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+.icon_trash {
+    font-size: 20px;
+    margin-top: 5px;
+    cursor: pointer;
 }

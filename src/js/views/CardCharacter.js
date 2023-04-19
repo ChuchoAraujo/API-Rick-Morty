@@ -11,11 +11,10 @@ export const CardCharacter = ({ characters }) => {
     useEffect(() => {
         const favoriteIds = store.favorites.map((favorite) => favorite.id); // ceramos variable nueva para recorrer los favs del store
         
-        const newFavoriteStatus = {};
+        const newFavoriteStatus = {}; // creamos un objeto donde guardaremos el estado
 
         characters.forEach((character) => { // iteramos sobre los characters
-            newFavoriteStatus[character.id] = favoriteIds.includes(character.id);
-            // console.log(newFavoriteStatus) // buscamos si algun id del store coincide con el id del character del home
+            newFavoriteStatus[character.id] = favoriteIds.includes(character.id); // asignamos el valor al objeto con la coincidencia del id entre store y home
         });
         setFavoriteStatus(newFavoriteStatus); // actualizamos el estatus con el valor encontrado
     }, [store.favorites, characters]);
