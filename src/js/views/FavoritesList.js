@@ -13,7 +13,7 @@ export const FavoritesList = () => {
             <img src={fav.image} />
             <div className='card-texto'>
               <p><strong>{fav.name}</strong></p>
-              <button className='btn btn-danger' onClick={() => actions.removeFavorite(fav)}>Delete fav: <BsFillTrash3Fill /></button>
+              <button className='btn btn-danger' onClick={() => actions.removeFavorite(fav)}><BsFillTrash3Fill /></button>
             </div>
             
             </div>

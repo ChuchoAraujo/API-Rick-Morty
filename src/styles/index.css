@@ -12,6 +12,11 @@ h3 {
     padding: 0;
 }
 
+p {
+    margin: 8px;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -54,8 +59,27 @@ a:hover {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 15px;
     margin: 0;
+}
+
+.card-texto a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+.icono_heart {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.icon_green{
+    color: aquamarine;
+}
+.icon_green_dark {
+    color: rgb(8, 145, 99);
+    font-weight: 700;
 }
 
 .card-texto p strong {

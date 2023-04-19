@@ -7,13 +7,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			selectId: (character) => {
 				setStore({ idCharacter: character });
-				console.log(getStore().idCharacter)
+				// console.log(getStore().idCharacter)
 			},
 			addFavorite: () => {
 				const store = getStore();
 				const newFavorite = store.idCharacter;
 				setStore({ favorites: [...store.favorites, newFavorite] });
-				console.log(getStore().favorites)
+				// console.log(getStore().favorites)
 			},
 			removeFavorite: (fav) => {
 				const store = getStore();
