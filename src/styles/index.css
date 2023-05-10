@@ -299,3 +299,14 @@ background-color: rgb(79, 231, 173);;
     margin-top: 5px;
     cursor: pointer;
 }
+
+.button-pagination {
+    background-color: rgb(32, 121, 85);
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    margin: 5px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+}
